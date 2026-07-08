@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- adicionei o meta -->
+    <title>Login </title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            background-color: #dedede;
+        }
+        button {
+            background-color: #130047;
+            color: rgb(247, 244, 244);
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: rgb(102, 4, 231);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .input-row {
+            display: flex;
+            gap: 15px;
+        }
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        .input-group label {
+            color: rgb(255, 255, 255);
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .input-group input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<div class="form-container">
+    <h3 style="color: white; text-align: center;">Login</h3>
+    <form>
+        <div class="input-row">
+            <div class="input-group">
+                <label for="email">teu email</label>
+                <input type="email" id="email" placeholder="Email">
+            </div>
+            <div class="input-group">
+                <label for="password">senha</label>
+                <input type="password" id="password" placeholder="Senha">
+            </div>
+        </div>
+        <button type="button" onclick="proximaPagina()" style="width: 100%; margin-top: 10px;">Entrar</button>
+    </form>
+</div>
+<script src="script.js"></script>
+</html> 
